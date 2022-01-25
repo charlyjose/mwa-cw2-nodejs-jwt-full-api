@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const BE_PORT = require('./app/config/env.json').backend.port
+// const BE_PORT = require('./app/config/env.json').backend.port
 const cookieParser = require('cookie-parser')
 
 const app = express();
@@ -48,7 +48,7 @@ require("./app/routes/question.routes")(app);
 require("./app/routes/survey.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || BE_PORT;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

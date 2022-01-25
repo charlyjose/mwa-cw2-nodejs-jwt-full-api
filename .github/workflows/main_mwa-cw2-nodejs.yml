@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'mwa-cw2-nodejs'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9560F44800A64EE0AF72D78205D84F24 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A1848DFAE8274330AB9A815567BB4949 }}
           package: .
